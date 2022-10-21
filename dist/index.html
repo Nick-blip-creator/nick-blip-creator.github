@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk & Honey</title>
+    <link rel="stylesheet" href="/style.52db61d7.css">
+    <link rel="stylesheet" href="/locomotive-scroll.58020645.css">
+
+    
+<script src="/style.52db61d7.js"></script><script src="/locomotive-scroll.58020645.js"></script></head>
+<body onload="startTime()">
+    <div data-scroll-container="" class="mw2000">
+      <div data-scroll="">
+        <div class="menu">
+          <p id="clock">4:45pm</p>
+          <p>M—B</p>
+          <p>Contact</p>
+        </div>
+      </div>
+  
+      <div data-scroll="" data-scroll-speed=".2">
+        <div class="padding">
+          <h1 data-scroll="">Milk and Butter is a design and content studio creating smart beautiful content for commercial clients.</h1>
+        </div>
+      </div>
+  
+      <div data-scroll="" data-scroll-speed=".8">
+        <div class="wrapper mb150">
+          <p class="large-text mb60">Services</p>
+          <div class="flex-three">
+            <div class="flex-item">
+              <p class="large-text mb33">Design</p>
+              <p class="large-text accent">Art Direction</p>
+              <p class="large-text accent">Web Design</p>
+              <p class="large-text accent">Motion Design</p>
+            </div>
+            <div class="flex-item">
+              <p class="large-text mb33">Content</p>
+              <p class="large-text accent">Video</p>
+              <p class="large-text accent">Photography</p>
+              <p class="large-text accent">Production</p>
+            </div>
+            <div class="flex-item">
+              <p class="large-text mb33">Technology</p>
+              <p class="large-text accent">CMS Builds</p>
+              <p class="large-text accent">Web Design</p>
+              <p class="large-text accent">Quality Assurance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div data-scroll="" data-scroll-speed="1.1">
+        <div class="wrapper mb150">
+          <p class="large-text mb33">Inquries</p>
+          <p class="e-mail-text"><a href="mailto:info@m-b.studio">info@m-b.studio</a></p>
+        </div>
+      </div>
+  
+      <div data-scroll="" data-scroll-speed=".8">
+        <div class="hover-container">
+          <div class="wrapper mb150">
+            <p class="large-text mb60">Select Clients</p>
+            <ul>
+              <li class="item">
+                <img src="/nike.98741a7f.jpg">
+                Apple,
+              </li>
+              <li class="item">
+                <img src="https://i.pinimg.com/736x/1a/e9/ff/1ae9ff68eddb75113cc797f1324515b9--color-coordination-reiss.jpg">
+                Google,
+              </li>
+              <li class="item">
+                <img src="http://www.todaysparent.com/wp-content/uploads/2014/02/Mint1.jpg">
+                Nike,
+              </li>
+              <li class="item">
+                <img src="http://www.todaysparent.com/wp-content/uploads/2014/02/Mint1.jpg">
+                Beats by Dre,
+              </li>
+              <li class="item">
+                <img src="http://www.todaysparent.com/wp-content/uploads/2014/02/Mint1.jpg">
+                Airbnb,
+              </li>
+              <li class="item">
+                <img src="http://www.todaysparent.com/wp-content/uploads/2014/02/Mint1.jpg">
+                GoDaddy,
+              </li>
+  
+              <li class="item">
+                <img src="https://ct112013.files.wordpress.com/2013/07/pasteeel.jpg">
+                Toyota,
+              </li>
+  
+              <li class="item">
+                <img src="https://ct112013.files.wordpress.com/2013/07/pasteeel.jpg">
+                Spotify,
+              </li>
+  
+              <li class="item">
+                <img src="https://ct112013.files.wordpress.com/2013/07/pasteeel.jpg">
+                Adidas,
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div data-scroll="" data-scroll-speed="1.1">
+        <div class="wrapper mb158">
+          <div class="flex-jobs">
+            <p class="large-text mb33">Jobs</p>
+            <div class="mw-wrap">
+              <p class="hiring-text">Currently hiring — email applications to <a href="mailto:info@m-b.studio">info@m-b.studio</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div data-scroll="">
+        <div class="wrapper">
+          <p class="footer-text">Milk&Butter<sup>TM</sup></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+
+<script src="/evan-milk.e31bb0bc.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/gsap.min.js"></script>
+<script>var items = document.querySelectorAll('.item');
+items.forEach(function (el) {
+  var image = el.querySelector('img');
+  el.addEventListener('mouseenter', function (e) {
+    gsap.to(image, {
+      autoAlpha: 1
+    });
+  });
+  el.addEventListener('mouseleave', function (e) {
+    gsap.to(image, {
+      autoAlpha: 0
+    });
+  });
+  el.addEventListener('mousemove', function (e) {
+    gsap.set(image, {
+      x: e.offsetX - 193,
+      y: e.offsetY - 5
+    });
+  });
+});
+
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m); //   s = checkTime(s);
+
+  document.getElementById('clock').innerHTML = h + ":" + m;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {
+    i = "0" + i;
+  }
+
+  ; // add zero in front of numbers < 10
+
+  return i;
+}</script>
+
+</html>
+
